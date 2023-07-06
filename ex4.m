@@ -1,5 +1,7 @@
+% load 'N.dat'
+% usage: matlab -r "ex4($(Process))"
 function a = ex4(N)
-N
+
 rng(N);
 n = N*100+100;
 matrix = rand(n);
@@ -21,6 +23,6 @@ ylabel('Y');
 title('Scatter Plot eigen values');
 
 % Optional: Save the figure as an image
-fn = sprintf('eigen_%d',N);
+fn = sprintf('eigen_%d.pdf',N);
 print(fn,'-dpdf');
 end

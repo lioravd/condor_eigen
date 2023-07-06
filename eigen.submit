@@ -1,0 +1,9 @@
+universe = vanilla
+executable = exe.sh
+initial_dir = /users/agnon/pp20222/lioravad/ex4
+getenv = true 
+output = ./output/eigen_$(Process).out
+error = ./output/eigen_$(Process).err
+log = ./output/eigen_$(Process).log
+arguments = $(Process)
+queue 10
